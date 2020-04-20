@@ -8,32 +8,31 @@
 		justify-content: space-between;
 	}
 	&__item {
-		width: 250px;
-		img {
-			display: block;
-			margin: 0 auto;
-		}
-		&__title {
-			font-size: 18px;
-			font-weight: 700;
-			color: #0d0d0d;
-			text-align: center;
-			margin-top: 38px;
-		}
-		&__text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		max-width: 239px;
+	}
+	&__title {
+		font-size: 18px;
+		font-weight: 700;
+		color: #0d0d0d;
+		margin-top: 38px;
+	}
+	&__text {
+		font-size: 14px;
+		line-height: 1.2;
+		font-weight: 300;
+		color: #0d0d0d;
+		margin-top: 26px;
+		text-align: center;
+		a {
 			font-size: 14px;
 			line-height: 1.2;
 			font-weight: 300;
-			color: #0d0d0d;
-			text-align: center;
-			margin-top: 26px;
-			a {
-				font-size: 14px;
-				line-height: 1.2;
-				font-weight: 300;
-				text-decoration: underline;
-				color: #ff0000;
-			}
+			text-decoration: underline;
+			color: #ff0000;
 		}
 	}
 }

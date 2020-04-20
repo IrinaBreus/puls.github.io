@@ -8,16 +8,10 @@
     margin: 0 auto;
 };
 
-.title {
-    font-size: 30px;
-    font-weight: 700;
-    color: #0d0d0d;
-    text-align: center;
-}
-
 @import 'block/promo';
 @import 'block/header';
 @import 'block/buttons';
 @import "block/advantage";
+@import 'block/title';
 
 @import 'base/media'
