@@ -1,0 +1,44 @@
+.carousel {
+	padding: 81px 0 80px 0;
+	margin: 0 auto;
+	&__inner {
+		position: relative;
+		
+		div {
+			img {
+				display: block;
+				margin: 0 auto;
+			}
+		}
+	}
+	.prev, .next {
+		position: absolute;
+		display: block;
+		top: 50%;
+		transform: translateY(-50%);
+		left: -66px;
+		border: none;
+		background-color: #fff;
+		img {
+			width: 31px;
+			height: 50px;
+		}
+	}
+	.next {
+		left: auto;
+		right: -66px;
+	}
+	.tns-nav {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+		width: 20%;
+		button {
+			width: 10px;
+			height: 10px;
+			border-radius: 100%;
+			border: none;
+			background-color: rgb(184, 179, 179);
+		}
+	}
+}

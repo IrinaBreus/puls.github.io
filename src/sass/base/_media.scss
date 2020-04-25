@@ -36,6 +36,24 @@
 	.consultation {
 		padding-left: 30px;
 	}
+	.carousel {
+		&__inner {
+			div {
+				img {
+					width: 70%;
+					
+				}
+			}
+		}
+		.prev, .next {
+			left: 0;
+		}
+		.next {
+			left: auto;
+			right: 0;
+		}
+	}
+	
 }
 @media (max-width: 767px) {
 	.container {
@@ -98,8 +116,17 @@
 	.title {
 		font-size: 28px;
 	}
-	.consultation {
-		padding-left: 10px;
+	.carousel {
+		&__inner {
+			div {
+				img {
+					width: 90%;
+				}
+			}
+		}
+		.prev, .next {
+			display: none;;
+		}
 	}
 };
 @media (max-width: 575px) {
