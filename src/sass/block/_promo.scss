@@ -52,6 +52,9 @@
 		a {
 			text-decoration: underline;
 			color: #ffffff;
+			&:hover {
+				text-decoration: none;
+			}
 		}
 	}
 }

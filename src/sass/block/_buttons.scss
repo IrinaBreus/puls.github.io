@@ -9,8 +9,16 @@
 	font-weight: 500;
 	text-transform: uppercase;
 	color: #ffffff;
+	transition: 0.3s all;
 	&:focus, &:active {
 		outline: none;
+	}
+	&:hover {
+		box-shadow: 4px 4px 10px grey;
+		transform: translateX(-2px);
+		transform: translateY(-2px);
+		background-color: #ffffff ;
+		color: $main-color;
 	}
 	&_main {
 		width: 300px;
