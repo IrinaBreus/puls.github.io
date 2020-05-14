@@ -46,13 +46,22 @@
             transition: 0.3s all;
             &:hover {
                 box-shadow: 4px 4px 10px #ffffff;
-                transform: translateY(-3px);
-                
-               
+                transform: translate(3px, -3px);
             }
             img {
                 height: 27px;
             }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        &__info {
+            width: 290px;
+        }
+        &__adr {
+            font-size: 16px;
         }
     }
 }

@@ -1,5 +1,5 @@
 .consultation {
-    max-height: 680px;
+    min-height: 680px;
     background: url(../img/bg/feet.jpg) center (center/cover) no-repeat;
     padding: 100px 0 92px 0;
     &__descr {
@@ -8,5 +8,14 @@
         font-weight: 500;
         color: #ffffff;
         margin-top: 80px;
+    }
+    .error {
+        border: 1px solid $main-color;
+    }
+    label.error {
+        border: none;
+        color: #ffffff;
+        text-align: center;
+        margin: -13px 0 15px 0;
     }
 }
