@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	const slider = tns({
+	const slider = tns({		//slider
 		container: '.carousel__inner',
 		items: 1,
 		slideBy: 'page',
@@ -22,7 +22,7 @@ $(document).ready(function(){
 			},
 		}
 	});
-
+		//arrow
 	document.querySelector('.prev').addEventListener('click', function () {
 		slider.goTo('prev');
 	});
@@ -31,6 +31,7 @@ $(document).ready(function(){
 		slider.goTo('next');
 	});
 
+	//tabs
 	$('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
 		$(this)
 			.addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active')
@@ -93,4 +94,8 @@ $(document).ready(function(){
 	valideForms('#consultation-form');
 	valideForms('#consultation form');
 	valideForms('#order form');
+
+	//Mask
+	$('input[name=phone]').mask("+7(999) 999-99-99");
+	
 })
