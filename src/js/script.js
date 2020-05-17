@@ -66,11 +66,11 @@ $(document).ready(function(){
 	
 	//forms
 	function valideForms(form) {
-		$(form).validate( {
+		$(form).validate({
 			rules: {
 				name: {
 					required: true,
-					minlenght: 4
+					minlength: 4
 				},
 				phone: "required",
 				email: {
@@ -81,7 +81,7 @@ $(document).ready(function(){
 			messages: {
 				name: {
 					required: "Пожалуйста, введите свое имя",
-					minlingth: jQuery.validator.format("Имя должно содержать не менее {0} символов")
+					minlength: jQuery.validator.format("Имя должно содержать не менее {0} символов")
 				},
 				phone: "Пожалуйста, укажите свой номер телефона",
 				email: {
@@ -97,5 +97,21 @@ $(document).ready(function(){
 
 	//Mask
 	$('input[name=phone]').mask("+7(999) 999-99-99");
+
+	//mail
+	$('form').submit(function(e) {
+		e.preventDefault();
+		$.ajax({
+			type: "POST",
+			url: "mailer/smart.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+			$('#consultation, #order').fadeOut();
+			$('.overlay, #thanks').fadeIn('slow');
+			$('form').trigger('reset');
+		});
+		return false;
+	});
 	
 })
