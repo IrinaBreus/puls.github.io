@@ -106,29 +106,32 @@
 			position: relative;
 			width: 50%;
 			padding-right: 20px;
-			padding-inline-start: 17px;
 			margin-left: 20px;
 			margin-bottom: 0;
-			list-style-type: none;
 			transform: translateX(0);
 			transition: 0.5s all;
-			li {
-				position: relative;
-				font-size: 14px;
-				line-height: 1.2;
-				font-weight: 300;
-				color: #555555;
-				margin-bottom: 18px;
-				&::before {
-					content: '';
-					width: 5px;
-					height: 5px;
-					background-color: $main-color;
-					position: absolute;
-					left: -20px;
-					top: 7px;
+			ul {
+				padding-inline-start: 17px;
+				list-style-type: none;
+				li {
+					position: relative;
+					font-size: 14px;
+					line-height: 1.2;
+					font-weight: 300;
+					color: #555555;
+					margin-bottom: 18px;
+					&::before {
+						content: '';
+						width: 5px;
+						height: 5px;
+						background-color: $main-color;
+						position: absolute;
+						left: -20px;
+						top: 7px;
+					}
 				}
 			}
+			
 			&_active {
 				transform: translateX(-100%);
 			}

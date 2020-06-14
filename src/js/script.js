@@ -65,14 +65,26 @@ $(document).ready(function(){
 	});
 	
 	//forms
+<<<<<<< Updated upstream
 	function valideForms(form) {
 		$(form).validate({
 			rules: {
 				name: {
 					required: true,
 					minlength: 4
+=======
+	function validateForms(form) {
+		$(form).validate( {
+			rules: {
+				name: {
+					required: true,
+					minlength: 2
 				},
-				phone: "required",
+				
+				phone: {
+					required: true,
+>>>>>>> Stashed changes
+				},
 				email: {
 					required: true,
 					email: true
@@ -89,11 +101,11 @@ $(document).ready(function(){
 					email: "Неправильный формат адреса эл.почты"
 				}
 			}
-		})
+		});
 	};
-	valideForms('#consultation-form');
-	valideForms('#consultation form');
-	valideForms('#order form');
+	validateForms('#consultation-form');
+	validateForms('#consultation form');
+	validateForms('#order form');
 
 	//Mask
 	$('input[name=phone]').mask("+7(999) 999-99-99");
@@ -113,8 +125,14 @@ $(document).ready(function(){
 		});
 		return false;
 	});
+<<<<<<< Updated upstream
 	
 	// scroll
+=======
+
+	//smooth scroll and pageup
+
+>>>>>>> Stashed changes
 	$(window).scroll(function() {
 		if ($(this).scrollTop() > 1600) {
 			$('.pageup').fadeIn();
@@ -122,9 +140,18 @@ $(document).ready(function(){
 			$('.pageup').fadeOut();
 		}
 	});
+<<<<<<< Updated upstream
 	$("a[href^='#']").click(function() {
 		const _href = $(this).attr("href");
 		$("html, body").animate({scrollTop: $(_href).offset().top+"px"});
 		return false;
 	});
+=======
+
+	$("a[href='#up']").click(function(){
+		const _href = $(this).attr("href");
+		$("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+		return false;
+});
+>>>>>>> Stashed changes
 })

@@ -1,5 +1,14 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/fonts';
+@import 'libs/slick';
+@import 'libs/tiny-slider';
+
 @import 'base/variables';
+<<<<<<< Updated upstream
 @import 'base/animation';
+=======
+@import 'base/animations';
+>>>>>>> Stashed changes
 
 * {
     font-family: 'Museo Sans Cyrl', sans-serif;

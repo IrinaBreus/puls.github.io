@@ -36,8 +36,13 @@
 		}
 	}
 	&__icon {
+<<<<<<< Updated upstream
 		&_animate {
 			animation: heartbeat 1.5s ease infinite;
+=======
+		&_animated {
+			animation: haertbeat 1.5s ease infinite;
+>>>>>>> Stashed changes
 			&:hover {
 				animation-play-state: paused;
 			}
